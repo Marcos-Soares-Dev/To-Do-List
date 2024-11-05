@@ -168,8 +168,7 @@ addTaskBtnResponsive.addEventListener('click', () => {
 
 themeSwitchIcon.addEventListener('click', () => {
     document.body.classList.toggle('themeDark')
-    document.querySelectorAll(".taskTitle").forEach(element => element.classList.toggle('themeDark'));
-    document.querySelectorAll(".taskDescription").forEach(element => element.classList.toggle('themeDark'));
+    
 
     if (document.body.classList.contains('themeDark')) {
         themeSwitchIcon.classList.replace('fa-moon', 'fa-sun')

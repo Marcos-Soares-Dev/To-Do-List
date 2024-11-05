@@ -12,7 +12,18 @@ body {
   gap: 2rem;
   max-width: 100vw;
   min-height: 100vh;
+
+  &.themeDark .taskTitle, &.themeDark .taskDescription {
+    background-color: #000;
+    color: #c92071;
+  }
+
+  &:not(.themeDark) .taskTitle, &:not(.themeDark) .taskDescription {
+    background-color: #fff;
+    color: #000;
+  }
 }
+
 
 .themeDark {
   background-color: #000;
