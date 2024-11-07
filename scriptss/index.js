@@ -28,47 +28,47 @@ addTaskBtn.addEventListener('click', () => {
       </div>
     `
     
-    // Adicione um evento de clique ao botão de check
+    
     newTask.querySelector('.saveTaskIcon').addEventListener('click', () => {
-      // Desabilite as divs de conteúdo
+      
       newTask.querySelector('.cardContent input').disabled = true
       newTask.querySelector('.cardContent textarea').disabled = true
       
-      // Oculte o botão de check
+      
       newTask.querySelector('.saveTaskIcon').style.display = 'none'
       newTask.querySelector('.saveTaskMessage').style.display = 'none'
 
-      //adicionar ao id da div o titulo que o usuario salvou
+      
       newTask.id = newTask.querySelector('.taskTitle').value
     })
 
     newTask.querySelector('.saveTaskMessage').addEventListener('click', () => {
-      // Desabilite as divs de conteúdo
+      
       newTask.querySelector('.cardContent input').disabled = true
       newTask.querySelector('.cardContent textarea').disabled = true
       
-      // Oculte o botão de check
+      
       newTask.querySelector('.saveTaskIcon').style.display = 'none'
       newTask.querySelector('.saveTaskMessage').style.display = 'none'
 
-      //adicionar ao id da div o titulo que o usuario salvou
+      
       newTask.id = newTask.querySelector('.taskTitle').value
     })
     
-    // Adicione um evento de clique ao botão de editar
+    
     newTask.querySelector('.editTaskIcon').addEventListener('click', () => {
-      // Habilite as divs de conteúdo e opções
+      
       newTask.querySelector('.cardContent input').disabled = false
       newTask.querySelector('.cardContent textarea').disabled = false
       
-      // Exiba o botão de check
+      
       newTask.querySelector('.saveTaskIcon').style.display = 'block'
       newTask.querySelector('.saveTaskMessage').style.display = 'block'
     })
     
-    // Adicione um evento de clique ao botão de excluir
+    
     newTask.querySelector('.removeTaskIcon').addEventListener('click', () => {
-      // Exclua a tarefa
+      
       const condition = confirm('Tem certeza que deseja excluir a tarefa: ' + newTask.querySelector('.taskTitle').value + '?')
 
       if (condition) {
@@ -104,34 +104,34 @@ addTaskBtnResponsive.addEventListener('click', () => {
       </div>
     `
     
-    // Adicione um evento de clique ao botão de check
+    
     newTask.querySelector('.saveTaskIcon').addEventListener('click', () => {
-      // Desabilite as divs de conteúdo e opções
+      
       newTask.querySelector('.cardContent input').disabled = true
       newTask.querySelector('.cardContent textarea').disabled = true
       
-      // Oculte o botão de check
+      
       newTask.querySelector('.saveTaskIcon').style.display = 'none'
       newTask.querySelector('.saveTaskMessage').style.display = 'none'
 
-      //adicionar ao id da div o titulo que o usuario salvou
+      
       newTask.id = newTask.querySelector('.taskTitle').value
     })
     
-    // Adicione um evento de clique ao botão de editar
+    
     newTask.querySelector('.editTaskIcon').addEventListener('click', () => {
-      // Habilite as divs de conteúdo e opções
+      
       newTask.querySelector('.cardContent input').disabled = false
       newTask.querySelector('.cardContent textarea').disabled = false
       
-      // Exiba o botão de check
+      
       newTask.querySelector('.saveTaskIcon').style.display = 'block'
       newTask.querySelector('.saveTaskMessage').style.display = 'block'
     })
     
-    // Adicione um evento de clique ao botão de excluir
+    
     newTask.querySelector('.removeTaskIcon').addEventListener('click', () => {
-      // Exclua a tarefa
+      
       const condition = confirm('Tem certeza que deseja excluir a tarefa: ' + newTask.querySelector('.taskTitle').value + '?')
 
       if (condition) {
